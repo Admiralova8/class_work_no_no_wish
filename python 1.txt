@@ -1,0 +1,38 @@
+1)a = 7.3
+b = 3
+c = 0 
+stroka = "abc"
+c = a * b 
+print(c, type(c))
+c = int(c)
+print(c, type(c))
+nump = c 
+print(nump)
+stroka = stroka * 2 + "!"
+print(stroka)
+
+
+
+
+
+
+
+2)name = input("Введите ваше имя:")
+age = input("Введите ваш возвраст:")
+#вывод приветствия 
+print(f"Рад приветствовать тебя {name}! Тебе уже {age} лет.")
+
+
+
+
+
+
+3)num1= float(input("Введите первое число"))
+num2= float(input("Введите второе число"))
+print(num1,"+","=",num1+num2)
+print(num1,"-","=",num1-num2)
+print(num1,"*","=",num1*num2)
+if num2==0:
+    print("Ошибка: Деление на ноль")
+else:
+    print(num1, "/", num2, "=", num1/num2)
