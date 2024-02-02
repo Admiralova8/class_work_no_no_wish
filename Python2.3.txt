@@ -1,0 +1,20 @@
+name=input("Как вас зовут?")
+age= int(input("Сколько вам лет?"))
+
+my_name="Иван"
+my_age=17
+
+if name==my_name:
+    print("У нас одинаковые имена")
+    if age==my_age:
+        print("А ещё, у нас одинаковый возраст")
+    else:
+        print(f"Приятно познакомится, name!")
+else:
+    print(f"Приятно познакомится, name!")
+if age>my_age:
+    print("Ты старше, чем я")
+elif age==my_age:
+    print("Возраст у нас одинаковый")
+else:
+    print("Ты младше, чем я")
