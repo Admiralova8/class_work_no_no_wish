@@ -1,0 +1,60 @@
+#1 
+def area_of_triangle(x1, y1, x2, y2, x3, y3):
+    return abs((x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)) / 2)
+
+def get_coordinates():
+    x1, y1 = map(int, input("Введите координаты первой вершины через пробел: ").split())
+    x2, y2 = map(int, input("Введите координаты второй вершины через пробел: ").split())
+    x3, y3 = map(int, input("Введите координаты третьей вершины через пробел: ").split())
+    return x1, y1, x2, y2, x3, y3
+
+x1, y1, x2, y2, x3, y3 = get_coordinates()
+triangle_area = area_of_triangle(x1, y1, x2, y2, x3, y3)
+print(f"Площадь треугольника равна {triangle_area}")
+
+#2
+arr = []
+for i in range(15):
+    num = int(input(f"Введите {i+1} элемент массива: "))
+    arr.append(num)
+
+gold = [i for i, el in enumerate(arr) if el == 0]
+print("Номера нулевых элементов массива:", gold)
+
+index = -1
+for i in range(len(arr)):
+    if arr[i] > 0:
+        index = i
+
+print("Номер последнего положительного элемента:", index)
+#3
+
+arr = []
+for i in range(17):
+    num = int(input(f"Введите {i+1}-й элемент массива: "))
+    arr.append(num)
+
+sum_elements = 0
+for num in arr:
+    if num < 0:
+        break
+    sum_elements += num
+
+print("Сумма всех элементов до первого отрицательного:", sum_elements)
+
+
+#5
+
+array = []
+print("Введите 20 элементов массива:")
+for _ in range(20):
+    elem = int(input())
+    array.append(elem)
+
+for i in range(20):
+    if array[i] == 0:
+        zero_indexes.append(i)
+
+print("Номера нулевых элементов в исходном массиве:")
+print(zero_indexes)
+zero_indexes = []
