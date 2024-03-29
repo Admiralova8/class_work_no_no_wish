@@ -20,10 +20,10 @@ print("кол-во чётных:", count)
 
 #3
 fruits = [['Banana', 'apple'], ['apricot', 'Avocado'], ['lime', 'lemon'], ['Mango', 'grapes']]
-for i in range(len(fruits)):
-    for j in range(len(fruits[i])):
-        if fruits[i][j][0].isupper():
-            print(fruits[i][j])
+for sublist in fruits:
+    for item in sublist:
+        if item[0].isupper():
+            print(item)
 #4
 random_elements = [['toy', 'bee', 'cheese', 'ear'],
                    [False, 'word', '0110110', 10],
